@@ -1,0 +1,30 @@
+
+/*
+class CheeseCalc {
+public:
+    void solution() {
+        cout << "\n\n" << best_price_recursive(0, 0, 0) << "\n\n";
+        prices = {2, 2, 2, 2, 1000, 100};
+        cout << "\n\n" << best_price_recursive(0, 0, 0) << "\n\n";
+    }
+
+private:
+    vector<cost> prices = {3, 3, 3, 3, 3, 3, 3, 120};
+
+    cost best_price_recursive(size_t numFromStart, int holes, cost currentCost) {
+        cout << "numFromStart: " << numFromStart << " | holes: " << holes << " | currentCost: " << currentCost << "\n";
+
+        if (numFromStart - 1 == prices.size()) {
+            return currentCost + discounted(prices[numFromStart - 1]);
+        }
+
+        if (holes == 5) {
+            return min(best_price_recursive(numFromStart + 1, 0, currentCost), best_price_recursive(numFromStart + 1, 5, currentCost += discounted(prices[numFromStart])));
+        }
+
+
+        return min(best_price_recursive(numFromStart + 1, holes + 1, currentCost += prices[numFromStart]),
+                   best_price_recursive(numFromStart + 1, holes, currentCost += discounted(prices[numFromStart])));
+    }
+};*/
+    
